@@ -43,7 +43,7 @@ console.log(today)
     var differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + 74; //added 74 since it screwed the 1 hour difference between gmt+3 and gmt+2; 
     console.log(differenceInDays)
     numOfWordale = differenceInDays;
-    return listOfWords[differenceInDays];
+    return listOfWords[Math.floor(Math.random() * 5)];
 }
 
 function clickLetter(value) {
